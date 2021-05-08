@@ -1,0 +1,814 @@
+
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="v2/img/favicon.png">
+    <title> COVID-19 Tracker Preventions & Informations </title>
+
+    <!-- C3 charts css -->
+    <link href="v2/css/c3.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../kenwheeler.github.io/slick/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../cdn.jsdelivr.net/npm/slick-carousel%401.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="../stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="v2/css/style.css">
+    <link href="../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="nk-body nk-body-alt loaded">
+<div class="nk-wrap">
+    <header class="nk-header bg-light-grad-a has-overlay" id="home">
+    <div class="overlay shape shape-line-a"></div>
+
+    <div class="nk-navbar is-light is-sticky" id="navbar">
+        <div class="bg-div">
+            <div class="container">
+                <div class="nk-navbar-wrap">
+                    <div class="nk-navbar-logo logo">
+                        <a href="index.html" class="logo-link">
+                            <img class="logo-dark" src="v2/img/logo.png" srcset="https://covid19 tracker.pk/v2/img/logo.png 2x" alt="logo">
+                            <img class="logo-light" src="v2/img/logo.png" srcset="https://covid19 tracker.pk/v2/img/logo.png 2x" alt="logo"> </a>
+                    </div>
+                    <div class="nk-navbar-toggle d-lg-none"><a href="#" class="toggle" data-menu-toggle="navbar-menu"><em
+                                class="icon-menu icon ni ni-menu"></em><em class="icon-close icon ni ni-cross"></em></a>
+                    </div>
+                    <nav class="nk-navbar-menu nk-navbar-menu-between" id="navbar-menu">
+                        <ul class="nk-menu">
+                            <li class="nk-menu-item"><a class="nav-link nk-menu-link nk-menu-toggle main-link" href="stats/pakistan.html">COVID-19 STATS<span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                            <ul class="nk-menu-dropdown nk-menu-sub">
+                                <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/weekly.html">Weekly Summary Stats</a></li>
+                                <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/pakistan.html">Pakistan</a></li>
+                                <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/ict.html">Islamabad</a></li>
+                                <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/punjab.html">Punjab</a></li>
+                                <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/sindh.html">Sindh</a></li>
+                                <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/kpk.html">KPK</a></li>
+                                <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/balochistan.html">Balochistan</a></li>
+                                <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/gilgit-baltistan.html">Gilgit Baltistan</a></li>
+                                <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/ajk.html">AJK/GB</a></li>
+                                <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/global.html">World Cases & Stats</a></li>
+                            </ul>
+
+                            <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="covid19.html">COVID-19</a></li>
+                            <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="prevention.html">PREVENTION</a></li>
+                            <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="faq.html">FAQ</a></li>
+                            <li><a href="contact.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> CONTACT US</a></li>         
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nk-banner-s2">
+        <div class="container">
+            <div class="row g-gs my-auto align-items-center justify-content-between">
+                <div class="col-lg-5 order-lg-last" data-aos="zoom-in">
+                    <div class="nk-banner-s2-image"><img src="v2/img/header-b.png" alt="">
+                        <div class="pulse" id="one">
+                            <i class="phone"></i>
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+
+                        <div class="pulse" id="two">
+                            <i class="phone"></i>
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+
+                        <div class="pulse" id="three">
+                            <i class="phone"></i>
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+
+                        <div class="pulse" id="four">
+                            <i class="phone"></i>
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+
+
+                        <div class="pulse" id="five">
+                            <i class="phone"></i>
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+
+                        <div class="pulse" id="six">
+                            <i class="phone"></i>
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+
+                        <div class="pulse" id="seven">
+                            <i class="phone"></i>
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+
+                        <div class="pulse" id="eight">
+                            <i class="phone"></i>
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="zoom-in">
+                    <div class="nk-banner-s2-block pr-xl-5">
+                        <div class="content">
+                            <h6 class="sub-title"><span>--ONE ENEMY, WHOLE WORLD IS FIGHTING WITH</span></h6>
+                            <h6 class="title sub">- See Live Stats Of Worldwide & Pakistan</h6>
+                            <h1 class="title"><Span>COVID-19</Span> All Live Update!</h1>
+                            <p>The coronavirus(COVID-19) was first reported in wuhan, Hubei, China in December 2019, the outbreak was later recognized as a pandemic by the World Health Organization(WHO).</p>
+                            <ul class="nk-banner-btns">
+                                <li><span><a href="stats/pakistan.html" class="btn "><span>PAKISTAN STATS</span></a></span> <span><a href="stats/global.html" class="btn  btn-outline"><span>WORLDWIDE STATS</span></a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <main class="nk-pages">
+                <script language="JavaScript" type="text/javascript">
+        setTimeout("location.href = '/'", 3600000); // milliseconds, so 10 seconds = 10000ms
+    </script>
+
+    <section class="section  bg-light">
+        <div class="container pb-50">
+            <div class="status">
+                <h3 class="status-title">COVID-19 Statistics Of Pakistan <span class="status-note">* Last updated: <span id="last-update" class="update-time">1 Dec, 2020 - 08:42pm Islamabad/Pakistan </span></span> </h3>
+                <ul class="top-statistics block-separator without-activecases print-in-dashboard ">
+                    <li class="tests" title="Conducted Tests" data-aos="fade-up" data-aos-duration="800">
+                        <div>
+                            <div class="icon diagnosed-icon"></div>
+                            <label title="Diagnosed Cases">Total Cases</label>
+                            <span class="counter" data-toggle="counter">398,024</span>
+                        </div>
+                        <div class="new-cases">
+                            <span class="tests">2,839 Cases 24 hours</span>
+                        </div>
+                        <li class="active" title="Active Cases">
+                        <div>
+                            <div class="icon active-icon"></div>
+                            <label title="Active Cases">Total Tests</label>
+                            <span class="counter" data-toggle="counter">5,508,810</span>
+                        </div>
+                        <div class="new-cases">
+                            <span class="active">33,302 Cases 24 hours</span>
+                        </div>
+                    </li>
+                    <li class="total" title="Diagnosed Cases">
+                        <div>
+                            <div class="icon tests-icon"></div>
+                            <label title="Conducted Tests">Critical Cases</label>
+                            <span class="counter" data-toggle="counter">2,046</span>
+                        </div>
+                        <div class="new-cases">
+                            <span class="total">14 Cases 24 hours</span>
+                        </div>
+                    </li>
+                    </li>
+                    <li class="recovered" title="Recovered">
+                        <div>
+                            <div class="icon recovered-icon"></div>
+                            <label title="Recovered">Recovered Cases</label>
+                            <span class="counter" data-toggle="counter">341,423</span>
+                        </div>
+                        <div class="new-cases">
+                            <span class="recovered">1,613 Cases 24 hours</span>
+                        </div>
+                    </li>
+                    <li class="deaths" title="Deaths">
+                        <div>
+                            <div class="icon deaths-icon"></div>
+                            <label title="Deaths">Total Deaths</label>
+                            <span class="counter" data-toggle="counter">8,025</span>
+                        </div>
+                        <div class="new-cases">
+                            <span class="deaths">40 Cases 24 hours</span>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12" mt-30>
+                <div class="row">
+                    <div class="col-md-12 box">
+                        <h3 class="status-title h">COVID-19 Pakistan Cases Statistics</h3>
+                        <div id="chartdiv"></div>
+                    </div>
+                    <div class="col-md-6 uu" style="margin-top: 30px;">
+                        <h3 class="status-title h">COVID-19 Deaths Per Day Stats</h3>
+                        <div id="chart-stacked"></div>
+                    </div>
+                    <div class="col-md-6 uu" style="margin-top: 30px;">
+                        <h3 class="status-title h">Trends of Positivity along with Daily Positive Cases & Tests</h3>
+                        <div id="container" style="width: 100%; height: 350px; margin: 0 auto"></div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+            </li>    
+            </ul>
+             </div>
+           </div>
+          </div>    
+         <div class="row g-gs">
+          <div class="col-lg-12 col-xl-12" data-covid="world" data-covid-update="last-update">
+                        <h3 class="status-title">COVID-19 Cases Provinces Wise </h3>
+                        <div class="">
+                            <div class="boxx">
+                                <div class="status-item">
+                                    <div class="h3 count covid-stats-cases">173,014</div>
+                                    <h6 class="title text-purple">SINDH</h6>
+                                </div>
+                            </div>
+                            <div class="boxx">
+                                <div class="status-item">
+                                    <div class="h3 count covid-stats-recovered">119,035</div>
+                                    <h6 class="title text-success">PUNJAB</h6>
+                                </div>
+                            </div>
+                            <div class="boxx">
+                                <div class="status-item">
+                                    <div class="h3 count covid-stats-death">47,190</div>
+                                    <h6 class="title text-danger">KPK</h6>
+                                </div>
+                            </div>
+                            <div class="boxx">
+                                <div class="status-item">
+                                    <div class="h3 count covid-stats-recovered">30,123</div>
+                                    <h6 class="title text-primary">ISLAMABAD</h6>
+                                </div>
+                            </div>
+                            <div class="boxx">
+                                <div class="status-item">
+                                    <div class="h3 count covid-stats-recovered">17,158</div>
+                                    <h6 class="title text-warning">BALOCHISTAN</h6>
+                                </div>
+                            </div>
+                            <div class="boxx">
+                                <div class="status-item">
+                                    <div class="h4 count covid-stats-recovered">6,855
+                                        / 4,649</div>
+                                    <h6 class="title text-info">GB/AJK</h6>
+                                </div>
+                            </div> 
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-l bg-white section-symptoms" id="symptoms">
+        <div class="container">
+
+            <div class="section-content">
+                <div class="row g-gs align-items-center">
+                    <div class="col-lg-6 order-lg-last text-right" data-aos="zoom-in">
+                        <div class="gfx2"> <img style="width: 75%;" src="v2/img/gfx-b.png" alt=""></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section-head-s2 section-head-s2-sm" data-aos="fade-up" data-aos-duration="500">
+                            <h4 class="subtitle">WHAT ARE THE SYMPTOMS OF CORONAVIRUS(COVID-19)?</h4>
+                            <h2 class="title">SYMPTOMS OF CORONAVIRUS</h2>
+                        </div>
+                        <div class="text-block-s2" data-aos="fade-up" data-aos-duration="500">
+                            <p>The most common symptoms of COVID-19 are fever, Tiredness, and dry cough. Some Patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These Symptoms are usually mild and begin gradually. Also the Symptoms may appear 2-14 days after exposure.</p>
+                        </div>
+                        <div class="row g-gs justify-content-center">
+                            <div class="col-12" data-aos="fade-up" data-aos-duration="800">
+                                <div class="box8">
+                                    <div class="box8-gfx"> <img src="v2/img/symptom-a.png" alt=""></div>
+                                    <div class="box8-content">
+                                        <p><strong>High Fever</strong> –High Fever this means you feel hot to touch on your chest or back (you do not need to measure your temperature). It is a common sign and also may appear in 2-10 days if you affected.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="box8">
+                                    <div class="box8-gfx"> <img src="v2/img/symptom-b.png" alt=""></div>
+                                    <div class="box8-content">
+                                        <p><strong>Continous Coughing</strong> – this means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" data-aos="fade-up" data-aos-duration="1200">
+                                <div class="box8">
+                                    <div class="box8-gfx"> <img src="v2/img/symptom-c.png" alt=""></div>
+                                    <div class="box8-content">
+                                        <p><strong>Difficulty in Breath</strong> – Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing or shortness of breath.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section bg-light section-advice has-overlay" id="prevention">
+        <div class="overlay shape shape-e"></div>
+        <div class="container">
+            <div class="section-content">
+                <div class="row g-gs align-items-center">
+                    <div class="col-lg-5">
+                        <div class=""> <img src="v2/img/gfx-c.jpg" alt=""></div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="section-head-s2">
+                            <h5 class="subtitle">HOW TO PROTECT YOURSELF FROM COVID-19?</h5>
+                            <h2 class="title">PREVENTION & ADVICE TO PREVENT THE DISEASE</h2>
+                            <p>There is currently no vaccine to prevent coronavirus disease 2019(COVID-19). The best way to prevent illness is to avoid being exposed to this virus. Stay aware of the latest information on the COVID-19 Outbreak, available on the WHO website and throgh your national and local public health authority</p>
+
+                        </div>
+                        <div class="row g-gs justify-content-center">
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="800">
+                                <div class="box7">
+                                    <div class="box7-gfx"> <img src="v2/img/advice-a.png" alt=""></div>
+                                    <div class="box7-content">
+                                        <h6 class="title">Wear Face Masks When Go Outside And Crowded Places</h6>
+                                        <P>Regularly and Throughly clean your hands with an alcohol based hand senitizer or wash them with soap. </P>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="1000">
+                                <div class="box7">
+                                    <div class="box7-gfx"> <img src="v2/img/advice-b.png" alt=""></div>
+                                    <div class="box7-content">
+                                        <h6 class="title">Avoid Crowded Places</h6>
+                                        <P>Hands touch many surfaces and can pick up virus, So hands can transfer the virus to your eyes, nose, We can lower the risk of infection by reducing our rate of contact with other people. Avoiding public spaces and social gatherings to the spread of COVID-19. </P>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="1200">
+                                <div class="box7">
+                                    <div class="box7-gfx"> <img src="v2/img/advice-c.png" alt=""></div>
+                                    <div class="box7-content">
+                                        <h6 class="title">Wash Your Hands For 20 Sec</h6>
+                                        <P> Reqularly CLean or Wash hands often with soap and water for at least 20 seconds or use hand sanitizer if soap and water are not available at that time.</P>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="1400">
+                                <div class="box7">
+                                    <div class="box7-gfx"> <img src="v2/img/advice-d.png" alt=""></div>
+                                    <div class="box7-content">
+                                        <h6 class="title">Avoid Contact Sick People</h6>
+                                        <P>Try to Avoid close contact with those sick people who has a symptoms of respiratory illness(COVID-19).</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-l bg-light section-protect has-overlay" id="protect">
+        <div class="overlay shape shape-d"></div>
+        <div class="container">
+            <div class="section-content  mx-lg-4">
+                <div class="row g-gs gx-m justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section-head-s2 wide-lg">
+                            <h5 class="subtitle">PROTECT YOURSELF BY PREVENTING BE AWARE ALWAYS:</h5>
+                            <h4 class="title">Myths-Busters About the COVID-19</h4>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="v-slider double-item">
+                                    <div class="margin">
+                                        <div class="box6 positive">
+                                            <div class="box6-gfx"> <img src="v2/img/cloud.svg" alt=""></div>
+                                            <div class="box6-text">
+                                                <h6 class="title">COVID-19 virus can be transmitted in areas with hot and humid Climates?</h6>
+                                                <p>From the evidence so far, the COVID-19 virus can be transmitted in ALL AREAS, including areas with hot and humid weather. Regardless of climate, adopt protective measures if you live in, or travel to an area reporting COVID-19. The best way to protect yourself against COVID-19 is by frequently cleaning your hands. By doing this you eliminate viruses that may be on your hands and avoid infection that could occur by then touching your eyes, mouth, and nose.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="margin">
+                                        <div class="box6 positive">
+                                            <div class="box6-gfx"> <img src="v2/img/drugs.svg" alt=""></div>
+                                            <div class="box6-text">
+                                                <h6 class="title">Are hand dryers effective in killing the new coronavirus?</h6>
+                                                <p>No,Hand dryers are not effective in killing the 2019-nCoV. To protect yourself against the new coronavirus, you should frequently clean your hands with an alcohol-based hand rub or wash them with soap and water. Once your hands are cleaned, you should dry them thoroughly by using paper towels or a warm air dryer.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="margin">
+                                        <div class="box6 positive">
+                                            <div class="box6-gfx"> <img src="v2/img/virus.svg" alt=""></div>
+                                            <div class="box6-text">
+                                                <h6 class="title">How effective are thermal scanners in detecting people infected with the new coronavirus?.</h6>
+                                                <p>Thermal scanners are effective in detecting people who have developed a fever (i.e. have a higher than normal body temperature) because of infection with the new coronavirus. However, they cannot detect people who are infected but are not yet sick with fever. This is because it takes between 2 and 10 days before people who are infected become sick and develop a fever.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="margin">
+                                        <div class="box6 positive">
+                                            <div class="box6-gfx"> <img src="v2/img/garlic.svg" alt=""></div>
+                                            <div class="box6-text">
+                                                <h6 class="title">There is no evidence from the current outbreak that eating garlic has protected people from the new coronavirus</h6>
+                                                <p>Garlic is the healthy food that may have some antimicrobial properties. How ever,
+                                                    there is no evidence from the current outbreak that eating garlic has protected people from the new coronavirus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section-head-s2 wide-lg">
+                            <h5 class="subtitle">Frequently Asked Questions</h5>
+                            <h4 class="title">Your Question Answered!</h4>
+
+                        </div>
+                        <div class="tab-content faq">
+                            <div class="tab-pane fade show active" id="covid-basics">
+                                <div class="accordion accordion-s2">
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-title" data-toggle="collapse" data-target="#covid-basics-01">What is a novel coronavirus? <span class="accordion-icon"></span></h5>
+                                        <div id="covid-basics-01" class="collapse show">
+                                            <div class="accordion-content">
+                                                <p>On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan China. The new name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease. Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-title collapsed" data-toggle="collapse" data-target="#covid-basics-02">What are the symptoms of COVID-19?<span class="accordion-icon"></span></h5>
+                                        <div id="covid-basics-02" class="collapse">
+                                            <div class="accordion-content">
+                                                <p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Some people become infected but don’t develop any symptoms and don't feel unwell. Most people (about 80%) recover from the disease without needing special treatment. Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-title collapsed" data-toggle="collapse" data-target="#covid-basics-03">Should I be tested for COVID-19? <span class="accordion-icon"></span></h5>
+                                        <div id="covid-basics-03" class="collapse">
+                                            <div class="accordion-content">
+                                                <p> Not everyone needs to be tested for COVID-19. For information about testing, see Testing for COVID-19.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-title collapsed" data-toggle="collapse" data-target="#covid-basics-04">Can a person test negative and later test positive for COVID-19? <span class="accordion-icon"></span></h5>
+                                        <div id="covid-basics-04" class="collapse">
+                                            <div class="accordion-content">
+                                                <p>Using the CDC-developed diagnostic test, a negative result means that the virus that causes COVID-19 was not found in the person’s sample. In the early stages of infection, it is possible the virus will not be detected.
+
+                                                 For COVID-19, a negative test result for a sample collected while a person has symptoms likely means that the COVID-19 virus is not causing their current illness.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </divclass="accordion-item">
+                                    <h5 class="accordion-title collapsed" data-toggle="collapse" data-target="#covid-basics-05">Should I go to work if there is an outbreak in my Community? <span class="accordion-icon"></span></h5>
+                                    <div id="covid-basics-05" class="collapse">
+                                        <div class="accordion-content">
+                                            <p>Follow the advice of your local health officials. Stay home if you can. Talk to your employer to discuss working from home, taking leave if you or someone in your household gets sick with COVID-19 symptoms, or if your child’s school is dismissed temporarily. Employers should be aware that more employees may need to stay at home to care for sick children or other sick family members than is usual in case of a community outbreak.</p>>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-l bg-light section-contact" id="contact">
+        <div class="container">
+            <div class="section-content">
+                <div class="row g-gs justify-content-between">
+
+                    <div class="col-md-4"><h5>COVID-19 AWARENESS VIDEO MESSAGE</h5>
+                        <video width="100%" height="210" controls="" autoplay="" loop="" playsinline="" _idm_id_="206866433" style="border: #333 1px solid; margin-top: 15px">
+                            <source src="videos/message.mp4" type="video/mp4" >
+                        </video></div>
+                    <div class="col-lg-4">
+                        <nav>
+                    <div class="col-lg-4">
+                        <div class="contact-form  bg-white">
+        </div>
+    </section>  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer class="nk-footer">
+    <section class="section section-footer section-m bg-light has-overlay" id="f-sections">
+
+        <div class="container">
+            <div class="row g-gs">
+                <div class="col-lg-2 col-md-12 mr-auto">
+                    <div class="wgs wgs-about">
+                        <div class="wgs-logo logo"> <a href="index.html" class="logo-link"> <img src="v2/img/logo-dark.png" alt="logo"> </a></div>
+                        <div class="wgs-about-text">
+                            <p>See Live Stats Of Worldwide & Pakistan for health information and advice about coronavirus (COVID-19), how to prevent and protect yourself from disease.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 fll">
+                    <div class="wgs wgs-menu">
+                        <h6 class="wgs-title">QUICK LINKS</h6>
+                        <ul class="wgs-links">
+                            <li><a href="index.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Home</a></li>
+                            <li><a href="covid19.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Covid-19</a></li>
+                            <li><a href="prevention.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> PREVENTION</a></li>
+                            <li><a href="faq.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> FAQ</a></li>
+                            <li><a href="contact.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-4">
+                    <div class="wgs wgs-menu">
+                        <h6 class="wgs-title">Subscribe To Stay Updated!</h6>
+                        <div class="form-box">
+
+                            <form action="#">
+                                <input type="text" class="form-control round" placeholder="Enter Email">
+                                <button class="round-btn" type="submit">Submit
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-12 mr-auto">
+                    <div class="wgs wgs-about">
+                        <h6 class="wgs-title">STAY CONNECT WITH US</h6>
+
+                        <ul class="padd-0">
+                            <li><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Ministry of National
+                                Health Services Regulations & Coordination,
+
+                                3rd Floor Kohsar Block,
+
+                                Islamabad, Pakistan
+                            </li>
+                            <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>  +92 (51) 9255090-2</li>
+                            <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>  +92 (51) 9245717</li>
+                            <li><span><i class="fa fa-envelope" aria-hidden="true"></i></span> healthpromotion@who.int</li>
+                            <li><span><i class="fa fa-envelope" aria-hidden="true"></i></span> contact@nhsrc.gov.pk</li> 
+                            <li><span><i class="fa fa-envelope" aria-hidden="true"></i></span> england.contactus@nhs.net</li>
+                        </ul>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-shape1 "><img class="bounce-1" src="v2/img/footer-shape1.png" alt="image"></div>
+        <div _ngcontent-obs-c40="" class="footer-shape2"><img _ngcontent-obs-c40="" src="v2/img/footer-shape2.png" alt="image"></div>
+        <div _ngcontent-obs-c40="" class="footer-shape3"><img _ngcontent-obs-c40="" src="v2/img/footer-shape3.png" alt="image"></div>
+    </section>
+    <section class="section section-footer">
+        <div class="container">
+            <div class="row align-items-center py-3">
+                <div class="col-md-12 text-center">
+                    <p class="COVID-19 Tracker-copyright">&copy; Designed & Developed by Ahsan Sattar 28026 CS 
+                            </a> and Coordination With Group Members</a>.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</footer>
+</div>
+<script src="../code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script type="text/javascript" src="../cdn.jsdelivr.net/npm/slick-carousel%401.8.1/slick/slick.min.js"></script>
+<script src="../cdn.jsdelivr.net/npm/popper.js%401.16.0/dist/umd/popper.min.js"></script>
+<script src="../stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="../unpkg.com/aos%402.3.1/dist/aos.js"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+
+<!--C3 Chart-->
+<script src="v2/js/d3.js"></script>
+<script src="v2/js/c3.js"></script>
+<script>
+    !function ($) {
+        "use strict";
+
+        var ChartC3 = function () {};
+
+        ChartC3.prototype.init = function () {
+            //generating chart
+
+            //stacked chart
+            c3.generate({
+                bindto: '#chart-stacked',
+                data: {
+                    x: 'x',
+                    columns: [
+                        ["x","2020-08-02","2020-08-03","2020-08-04","2020-08-05","2020-08-06","2020-08-07","2020-08-08","2020-08-09","2020-08-10","2020-08-11","2020-08-12","2020-08-13","2020-08-14","2020-08-15","2020-08-16","2020-08-17","2020-08-18","2020-08-19","2020-08-20","2020-08-21","2020-08-22","2020-08-23","2020-08-24","2020-08-25","2020-08-26","2020-08-27","2020-08-28","2020-08-29","2020-08-30","2020-08-31","2020-09-01","2020-09-02","2020-09-03","2020-09-04","2020-09-05","2020-09-06","2020-09-07","2020-09-08","2020-09-09","2020-09-10","2020-09-11","2020-09-12","2020-09-13","2020-09-14","2020-09-15","2020-09-16","2020-09-17","2020-09-18","2020-09-19","2020-09-20","2020-09-21","2020-09-22","2020-09-23","2020-09-24","2020-09-25","2020-09-26","2020-09-27","2020-09-28","2020-09-29","2020-09-30","2020-10-01","2020-10-02","2020-10-03","2020-10-04","2020-10-05","2020-10-06","2020-10-07","2020-10-08","2020-10-09","2020-10-10","2020-10-11","2020-10-12","2020-10-13","2020-10-14","2020-10-15","2020-10-16","2020-10-17","2020-10-18","2020-10-19","2020-10-20","2020-10-21","2020-10-22","2020-10-23","2020-10-24","2020-10-25","2020-10-26","2020-10-27","2020-10-28","2020-10-29","2020-10-30","2020-10-31","2020-11-01","2020-11-02","2020-11-03","2020-11-04","2020-11-05","2020-11-06","2020-11-07","2020-11-08","2020-11-09","2020-11-10","2020-11-11","2020-11-12","2020-11-13","2020-11-14","2020-11-15","2020-11-16","2020-11-17","2020-11-18","2020-11-19","2020-11-20","2020-11-21","2020-11-22","2020-11-23","2020-11-24","2020-11-25","2020-11-26","2020-11-27","2020-11-28","2020-11-29"],
+                        ["Deaths Per Day",6,8,15,15,21,17,14,8,15,15,17,10,14,9,6,7,15,11,8,10,10,4,9,9,6,9,1,4,6,4,18,10,7,5,2,3,5,9,6,5,3,6,4,6,4,6,9,7,1,4,4,8,5,7,7,6,9,8,5,5,15,8,6,4,6,12,9,8,6,12,10,8,14,13,7,13,16,5,14,19,10,13,12,9,3,6,14,16,20,11,17,12,14,18,26,30,20,25,9,23,21,34,37,17,32,19,33,37,18,36,42,59,34,48,59,40,54,45,43,40]                    ],
+                    type: 'bar',
+                    labels: true,
+                    colors: {
+                        Molarity_Rate: function (d) {
+                            if (d.value >= 21 && d.value <= 50) {
+                                return '#4f81bd';
+                            } else if (d.value > 50 && d.value <= 80) {
+                                return '#ffc000';
+                            } else if (d.value > 81 && d.value <= 94) {
+                                return '#ed7d31';
+                            } else if (d.value > 94) {
+                                return '#c00000';
+                            } else {
+                                return '#9dc3e6fa';
+                            }
+                        }
+                    },
+                },
+                bar: {
+                    width: {
+                        ratio: 0.8 // this makes bar width 50% of length between ticks
+                    }
+                    // or
+                    //width: 100 // this makes bar width 100px
+                },
+                axis: {
+                    x: {
+                        type: 'timeseries',
+                        show: true,
+                        tick: {
+                            rotate: 90,
+                            format: '%d-%m-%Y'
+                        }
+                    },
+                    y: {
+                        label: {
+                            text: 'COVID Morality Trends in Pakistan',
+                            position: 'outer-middle'
+                        }
+                    }
+                }
+            });
+        },
+            $.ChartC3 = new ChartC3, $.ChartC3.Constructor = ChartC3
+
+    }(window.jQuery),
+
+//initializing
+        function ($) {
+            "use strict";
+            $.ChartC3.init()
+        }(window.jQuery);
+
+
+</script>
+
+<!-- Resources -->
+<script src="../cdn.amcharts.com/lib/4/core.js"></script>
+<script src="../cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="../cdn.amcharts.com/lib/4/themes/material.js"></script>
+<script src="../cdn.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="../cdn.amcharts.com/lib/4/themes/dataviz.js"></script>
+<script src="v2/js/script.js"></script>
+<script>
+    am4core.ready(function () {
+
+        // Themes begin
+        am4core.useTheme(am4themes_material);
+        am4core.useTheme(am4themes_animated);
+        // Themes end
+
+        // Create chart instance
+        var chart = am4core.create("chartdiv", am4charts.XYChart);
+
+        // Add data
+        chart.data = [{"date":"2020-04-01","confirmed_cases":178,"deaths":5,"tests_performed":1164},{"date":"2020-04-02","confirmed_cases":252,"deaths":3,"tests_performed":1538},{"date":"2020-04-03","confirmed_cases":161,"deaths":5,"tests_performed":2353},{"date":"2020-04-04","confirmed_cases":258,"deaths":5,"tests_performed":3428},{"date":"2020-04-05","confirmed_cases":172,"deaths":5,"tests_performed":1978},{"date":"2020-04-06","confirmed_cases":397,"deaths":4,"tests_performed":1933},{"date":"2020-04-07","confirmed_cases":577,"deaths":4,"tests_performed":3088},{"date":"2020-04-08","confirmed_cases":208,"deaths":5,"tests_performed":3076},{"date":"2020-04-09","confirmed_cases":248,"deaths":5,"tests_performed":2737},{"date":"2020-04-10","confirmed_cases":284,"deaths":5,"tests_performed":2478},{"date":"2020-04-11","confirmed_cases":190,"deaths":16,"tests_performed":2457},{"date":"2020-04-12","confirmed_cases":254,"deaths":9,"tests_performed":2805},{"date":"2020-04-13","confirmed_cases":336,"deaths":4,"tests_performed":3233},{"date":"2020-04-14","confirmed_cases":342,"deaths":11,"tests_performed":3157},{"date":"2020-04-15","confirmed_cases":272,"deaths":18,"tests_performed":3280},{"date":"2020-04-16","confirmed_cases":520,"deaths":11,"tests_performed":5540},{"date":"2020-04-17","confirmed_cases":497,"deaths":9,"tests_performed":6264},{"date":"2020-04-18","confirmed_cases":465,"deaths":19,"tests_performed":6416},{"date":"2020-04-19","confirmed_cases":514,"deaths":19,"tests_performed":7847},{"date":"2020-04-20","confirmed_cases":425,"deaths":17,"tests_performed":4873},{"date":"2020-04-21","confirmed_cases":796,"deaths":18,"tests_performed":5347},{"date":"2020-04-22","confirmed_cases":533,"deaths":15,"tests_performed":5637},{"date":"2020-04-23","confirmed_cases":742,"deaths":13,"tests_performed":6700},{"date":"2020-04-24","confirmed_cases":642,"deaths":16,"tests_performed":6839},{"date":"2020-04-25","confirmed_cases":785,"deaths":16,"tests_performed":6780},{"date":"2020-04-26","confirmed_cases":783,"deaths":12,"tests_performed":6218},{"date":"2020-04-27","confirmed_cases":605,"deaths":20,"tests_performed":6391},{"date":"2020-04-28","confirmed_cases":751,"deaths":26,"tests_performed":6417},{"date":"2020-04-29","confirmed_cases":806,"deaths":19,"tests_performed":8530},{"date":"2020-04-30","confirmed_cases":874,"deaths":24,"tests_performed":8249},{"date":"2020-05-01","confirmed_cases":990,"deaths":32,"tests_performed":7971},{"date":"2020-05-02","confirmed_cases":1297,"deaths":23,"tests_performed":9164},{"date":"2020-05-03","confirmed_cases":989,"deaths":22,"tests_performed":8716},{"date":"2020-05-04","confirmed_cases":1083,"deaths":24,"tests_performed":9522},{"date":"2020-05-05","confirmed_cases":1315,"deaths":40,"tests_performed":9857},{"date":"2020-05-06","confirmed_cases":1049,"deaths":33,"tests_performed":10178},{"date":"2020-05-07","confirmed_cases":1523,"deaths":35,"tests_performed":12196},{"date":"2020-05-08","confirmed_cases":1764,"deaths":35,"tests_performed":11993},{"date":"2020-05-09","confirmed_cases":1637,"deaths":24,"tests_performed":12982},{"date":"2020-05-10","confirmed_cases":1991,"deaths":21,"tests_performed":13341},{"date":"2020-05-11","confirmed_cases":1476,"deaths":28,"tests_performed":11367},{"date":"2020-05-12","confirmed_cases":1140,"deaths":39,"tests_performed":10957},{"date":"2020-05-13","confirmed_cases":2255,"deaths":31,"tests_performed":11848},{"date":"2020-05-14","confirmed_cases":1452,"deaths":33,"tests_performed":13051},{"date":"2020-05-15","confirmed_cases":1430,"deaths":33,"tests_performed":13700},{"date":"2020-05-16","confirmed_cases":1581,"deaths":31,"tests_performed":14878},{"date":"2020-05-17","confirmed_cases":1352,"deaths":39,"tests_performed":14175},{"date":"2020-05-18","confirmed_cases":1974,"deaths":30,"tests_performed":13925},{"date":"2020-05-19","confirmed_cases":1841,"deaths":36,"tests_performed":12957},{"date":"2020-05-20","confirmed_cases":1932,"deaths":46,"tests_performed":13962},{"date":"2020-05-21","confirmed_cases":2193,"deaths":32,"tests_performed":15346},{"date":"2020-05-22","confirmed_cases":2603,"deaths":50,"tests_performed":16387},{"date":"2020-05-23","confirmed_cases":1743,"deaths":34,"tests_performed":14705},{"date":"2020-05-24","confirmed_cases":2164,"deaths":32,"tests_performed":12915},{"date":"2020-05-25","confirmed_cases":1748,"deaths":34,"tests_performed":10049},{"date":"2020-05-26","confirmed_cases":1356,"deaths":30,"tests_performed":7252},{"date":"2020-05-27","confirmed_cases":1446,"deaths":28,"tests_performed":8491},{"date":"2020-05-28","confirmed_cases":2076,"deaths":36,"tests_performed":8687},{"date":"2020-05-29","confirmed_cases":2636,"deaths":57,"tests_performed":11931},{"date":"2020-05-30","confirmed_cases":2429,"deaths":78,"tests_performed":12020},{"date":"2020-05-31","confirmed_cases":3039,"deaths":88,"tests_performed":14972},{"date":"2020-06-01","confirmed_cases":2964,"deaths":60,"tests_performed":14398},{"date":"2020-06-02","confirmed_cases":3938,"deaths":78,"tests_performed":16548},{"date":"2020-06-03","confirmed_cases":4131,"deaths":67,"tests_performed":17370},{"date":"2020-06-04","confirmed_cases":3777,"deaths":82,"tests_performed":20167},{"date":"2020-06-05","confirmed_cases":4896,"deaths":68,"tests_performed":22812},{"date":"2020-06-06","confirmed_cases":4734,"deaths":97,"tests_performed":22185},{"date":"2020-06-07","confirmed_cases":4960,"deaths":67,"tests_performed":23100},{"date":"2020-06-08","confirmed_cases":4728,"deaths":65,"tests_performed":22650},{"date":"2020-06-09","confirmed_cases":4646,"deaths":105,"tests_performed":24620},{"date":"2020-06-10","confirmed_cases":5385,"deaths":83,"tests_performed":23799},{"date":"2020-06-11","confirmed_cases":5834,"deaths":101,"tests_performed":26573},{"date":"2020-06-12","confirmed_cases":6397,"deaths":107,"tests_performed":28344},{"date":"2020-06-13","confirmed_cases":6472,"deaths":88,"tests_performed":29850},{"date":"2020-06-14","confirmed_cases":6825,"deaths":81,"tests_performed":29546},{"date":"2020-06-15","confirmed_cases":5248,"deaths":97,"tests_performed":29085},{"date":"2020-06-16","confirmed_cases":4443,"deaths":111,"tests_performed":25015},{"date":"2020-06-17","confirmed_cases":5839,"deaths":136,"tests_performed":28117},{"date":"2020-06-18","confirmed_cases":5358,"deaths":118,"tests_performed":31500},{"date":"2020-06-19","confirmed_cases":4944,"deaths":136,"tests_performed":28824},{"date":"2020-06-20","confirmed_cases":6604,"deaths":153,"tests_performed":31681},{"date":"2020-06-21","confirmed_cases":4951,"deaths":119,"tests_performed":28855},{"date":"2020-06-22","confirmed_cases":4471,"deaths":89,"tests_performed":30520},{"date":"2020-06-23","confirmed_cases":3946,"deaths":105,"tests_performed":24599},{"date":"2020-06-24","confirmed_cases":3892,"deaths":60,"tests_performed":23380},{"date":"2020-06-25","confirmed_cases":4044,"deaths":148,"tests_performed":21835},{"date":"2020-06-26","confirmed_cases":2775,"deaths":59,"tests_performed":21041},{"date":"2020-06-27","confirmed_cases":3138,"deaths":74,"tests_performed":21033},{"date":"2020-06-28","confirmed_cases":4072,"deaths":83,"tests_performed":25013},{"date":"2020-06-29","confirmed_cases":3557,"deaths":68,"tests_performed":23009},{"date":"2020-06-30","confirmed_cases":2846,"deaths":118,"tests_performed":20930},{"date":"2020-07-01","confirmed_cases":4133,"deaths":91,"tests_performed":22418},{"date":"2020-07-02","confirmed_cases":4339,"deaths":78,"tests_performed":22128},{"date":"2020-07-03","confirmed_cases":4087,"deaths":78,"tests_performed":22941},{"date":"2020-07-04","confirmed_cases":3387,"deaths":68,"tests_performed":22050},{"date":"2020-07-05","confirmed_cases":3191,"deaths":93,"tests_performed":25527},{"date":"2020-07-06","confirmed_cases":3344,"deaths":50,"tests_performed":22271},{"date":"2020-07-07","confirmed_cases":2691,"deaths":77,"tests_performed":24577},{"date":"2020-07-08","confirmed_cases":2980,"deaths":83,"tests_performed":21951},{"date":"2020-07-09","confirmed_cases":3359,"deaths":61,"tests_performed":24333},{"date":"2020-07-10","confirmed_cases":2751,"deaths":75,"tests_performed":23255},{"date":"2020-07-11","confirmed_cases":2752,"deaths":65,"tests_performed":23569},{"date":"2020-07-12","confirmed_cases":2521,"deaths":74,"tests_performed":24211},{"date":"2020-07-13","confirmed_cases":2769,"deaths":69,"tests_performed":22532},{"date":"2020-07-14","confirmed_cases":1979,"deaths":50,"tests_performed":21020},{"date":"2020-07-15","confirmed_cases":2165,"deaths":67,"tests_performed":21749},{"date":"2020-07-16","confirmed_cases":2145,"deaths":40,"tests_performed":24262},{"date":"2020-07-17","confirmed_cases":2085,"deaths":49,"tests_performed":23907},{"date":"2020-07-18","confirmed_cases":1918,"deaths":47,"tests_performed":23011},{"date":"2020-07-19","confirmed_cases":1579,"deaths":46,"tests_performed":22559},{"date":"2020-07-20","confirmed_cases":1587,"deaths":31,"tests_performed":19108},{"date":"2020-07-21","confirmed_cases":1013,"deaths":40,"tests_performed":17783},{"date":"2020-07-22","confirmed_cases":1332,"deaths":38,"tests_performed":18331},{"date":"2020-07-23","confirmed_cases":1763,"deaths":32,"tests_performed":22408},{"date":"2020-07-24","confirmed_cases":1209,"deaths":54,"tests_performed":22006},{"date":"2020-07-25","confirmed_cases":1487,"deaths":24,"tests_performed":23630},{"date":"2020-07-26","confirmed_cases":1226,"deaths":35,"tests_performed":23254},{"date":"2020-07-27","confirmed_cases":1176,"deaths":20,"tests_performed":22056},{"date":"2020-07-28","confirmed_cases":936,"deaths":23,"tests_performed":19610},{"date":"2020-07-29","confirmed_cases":1063,"deaths":27,"tests_performed":21256},{"date":"2020-07-30","confirmed_cases":1114,"deaths":32,"tests_performed":21628},{"date":"2020-07-31","confirmed_cases":903,"deaths":27,"tests_performed":20507},{"date":"2020-08-01","confirmed_cases":841,"deaths":19,"tests_performed":22930},{"date":"2020-08-02","confirmed_cases":553,"deaths":6,"tests_performed":14003},{"date":"2020-08-03","confirmed_cases":330,"deaths":8,"tests_performed":11026},{"date":"2020-08-04","confirmed_cases":432,"deaths":15,"tests_performed":10690},{"date":"2020-08-05","confirmed_cases":675,"deaths":15,"tests_performed":11915},{"date":"2020-08-06","confirmed_cases":727,"deaths":21,"tests_performed":15001},{"date":"2020-08-07","confirmed_cases":782,"deaths":17,"tests_performed":20461},{"date":"2020-08-08","confirmed_cases":842,"deaths":14,"tests_performed":24366},{"date":"2020-08-09","confirmed_cases":634,"deaths":8,"tests_performed":23390},{"date":"2020-08-10","confirmed_cases":539,"deaths":15,"tests_performed":20495},{"date":"2020-08-11","confirmed_cases":531,"deaths":15,"tests_performed":18227},{"date":"2020-08-12","confirmed_cases":730,"deaths":17,"tests_performed":20631},{"date":"2020-08-13","confirmed_cases":753,"deaths":10,"tests_performed":19221},{"date":"2020-08-14","confirmed_cases":626,"deaths":14,"tests_performed":23745},{"date":"2020-08-15","confirmed_cases":747,"deaths":9,"tests_performed":23722},{"date":"2020-08-16","confirmed_cases":670,"deaths":6,"tests_performed":24022},{"date":"2020-08-17","confirmed_cases":488,"deaths":7,"tests_performed":22448},{"date":"2020-08-18","confirmed_cases":617,"deaths":15,"tests_performed":17612},{"date":"2020-08-19","confirmed_cases":613,"deaths":11,"tests_performed":22859},{"date":"2020-08-20","confirmed_cases":513,"deaths":8,"tests_performed":23670},{"date":"2020-08-21","confirmed_cases":630,"deaths":10,"tests_performed":25613},{"date":"2020-08-22","confirmed_cases":586,"deaths":10,"tests_performed":25537},{"date":"2020-08-23","confirmed_cases":591,"deaths":4,"tests_performed":24956},{"date":"2020-08-24","confirmed_cases":496,"deaths":9,"tests_performed":23655},{"date":"2020-08-25","confirmed_cases":450,"deaths":9,"tests_performed":24231},{"date":"2020-08-26","confirmed_cases":445,"deaths":6,"tests_performed":23441},{"date":"2020-08-27","confirmed_cases":415,"deaths":9,"tests_performed":23483},{"date":"2020-08-28","confirmed_cases":319,"deaths":1,"tests_performed":22434},{"date":"2020-08-29","confirmed_cases":264,"deaths":4,"tests_performed":21434},{"date":"2020-08-30","confirmed_cases":213,"deaths":6,"tests_performed":18017},{"date":"2020-08-31","confirmed_cases":300,"deaths":4,"tests_performed":20882},{"date":"2020-09-01","confirmed_cases":441,"deaths":18,"tests_performed":20480},{"date":"2020-09-02","confirmed_cases":424,"deaths":10,"tests_performed":21744},{"date":"2020-09-03","confirmed_cases":498,"deaths":7,"tests_performed":23218},{"date":"2020-09-04","confirmed_cases":513,"deaths":5,"tests_performed":24857},{"date":"2020-09-05","confirmed_cases":484,"deaths":2,"tests_performed":25384},{"date":"2020-09-06","confirmed_cases":394,"deaths":3,"tests_performed":20980},{"date":"2020-09-07","confirmed_cases":330,"deaths":5,"tests_performed":23521},{"date":"2020-09-08","confirmed_cases":426,"deaths":9,"tests_performed":22830},{"date":"2020-09-09","confirmed_cases":441,"deaths":6,"tests_performed":25081},{"date":"2020-09-10","confirmed_cases":548,"deaths":5,"tests_performed":29534},{"date":"2020-09-11","confirmed_cases":548,"deaths":3,"tests_performed":28724},{"date":"2020-09-12","confirmed_cases":526,"deaths":6,"tests_performed":31411},{"date":"2020-09-13","confirmed_cases":539,"deaths":4,"tests_performed":28823},{"date":"2020-09-14","confirmed_cases":404,"deaths":6,"tests_performed":27277},{"date":"2020-09-15","confirmed_cases":665,"deaths":4,"tests_performed":29097},{"date":"2020-09-16","confirmed_cases":545,"deaths":6,"tests_performed":31808},{"date":"2020-09-17","confirmed_cases":752,"deaths":9,"tests_performed":33865},{"date":"2020-09-18","confirmed_cases":645,"deaths":7,"tests_performed":35720},{"date":"2020-09-19","confirmed_cases":640,"deaths":1,"tests_performed":34544},{"date":"2020-09-20","confirmed_cases":633,"deaths":4,"tests_performed":33393},{"date":"2020-09-21","confirmed_cases":582,"deaths":4,"tests_performed":36155},{"date":"2020-09-22","confirmed_cases":532,"deaths":8,"tests_performed":33744},{"date":"2020-09-23","confirmed_cases":799,"deaths":5,"tests_performed":42299},{"date":"2020-09-24","confirmed_cases":798,"deaths":7,"tests_performed":37504},{"date":"2020-09-25","confirmed_cases":566,"deaths":7,"tests_performed":40167},{"date":"2020-09-26","confirmed_cases":694,"deaths":6,"tests_performed":36468},{"date":"2020-09-27","confirmed_cases":566,"deaths":9,"tests_performed":28887},{"date":"2020-09-28","confirmed_cases":672,"deaths":8,"tests_performed":32665},{"date":"2020-09-29","confirmed_cases":747,"deaths":5,"tests_performed":32031},{"date":"2020-09-30","confirmed_cases":543,"deaths":5,"tests_performed":34239},{"date":"2020-10-01","confirmed_cases":625,"deaths":15,"tests_performed":31697},{"date":"2020-10-02","confirmed_cases":553,"deaths":8,"tests_performed":35071},{"date":"2020-10-03","confirmed_cases":632,"deaths":6,"tests_performed":33725},{"date":"2020-10-04","confirmed_cases":644,"deaths":4,"tests_performed":29565},{"date":"2020-10-05","confirmed_cases":467,"deaths":6,"tests_performed":28280},{"date":"2020-10-06","confirmed_cases":624,"deaths":12,"tests_performed":27614},{"date":"2020-10-07","confirmed_cases":583,"deaths":9,"tests_performed":31168},{"date":"2020-10-08","confirmed_cases":661,"deaths":8,"tests_performed":33898},{"date":"2020-10-09","confirmed_cases":671,"deaths":6,"tests_performed":33665},{"date":"2020-10-10","confirmed_cases":666,"deaths":12,"tests_performed":28893},{"date":"2020-10-11","confirmed_cases":385,"deaths":10,"tests_performed":26951},{"date":"2020-10-12","confirmed_cases":531,"deaths":8,"tests_performed":30022},{"date":"2020-10-13","confirmed_cases":615,"deaths":14,"tests_performed":28916},{"date":"2020-10-14","confirmed_cases":756,"deaths":13,"tests_performed":31862},{"date":"2020-10-15","confirmed_cases":659,"deaths":7,"tests_performed":33901},{"date":"2020-10-16","confirmed_cases":641,"deaths":13,"tests_performed":32465},{"date":"2020-10-17","confirmed_cases":567,"deaths":16,"tests_performed":32062},{"date":"2020-10-18","confirmed_cases":440,"deaths":5,"tests_performed":27091},{"date":"2020-10-19","confirmed_cases":618,"deaths":14,"tests_performed":26211},{"date":"2020-10-20","confirmed_cases":660,"deaths":19,"tests_performed":26670},{"date":"2020-10-21","confirmed_cases":736,"deaths":10,"tests_performed":28534},{"date":"2020-10-22","confirmed_cases":736,"deaths":13,"tests_performed":27050},{"date":"2020-10-23","confirmed_cases":847,"deaths":12,"tests_performed":31009},{"date":"2020-10-24","confirmed_cases":832,"deaths":9,"tests_performed":28724},{"date":"2020-10-25","confirmed_cases":707,"deaths":3,"tests_performed":26492},{"date":"2020-10-26","confirmed_cases":773,"deaths":6,"tests_performed":27133},{"date":"2020-10-27","confirmed_cases":825,"deaths":14,"tests_performed":29477},{"date":"2020-10-28","confirmed_cases":908,"deaths":16,"tests_performed":29449},{"date":"2020-10-29","confirmed_cases":1078,"deaths":20,"tests_performed":32933},{"date":"2020-10-30","confirmed_cases":807,"deaths":11,"tests_performed":21688},{"date":"2020-10-31","confirmed_cases":977,"deaths":17,"tests_performed":27665},{"date":"2020-11-01","confirmed_cases":1123,"deaths":12,"tests_performed":27953},{"date":"2020-11-02","confirmed_cases":1167,"deaths":14,"tests_performed":27984},{"date":"2020-11-03","confirmed_cases":1313,"deaths":18,"tests_performed":26565},{"date":"2020-11-04","confirmed_cases":1302,"deaths":26,"tests_performed":32376},{"date":"2020-11-05","confirmed_cases":1376,"deaths":30,"tests_performed":35745},{"date":"2020-11-06","confirmed_cases":1502,"deaths":20,"tests_performed":34400},{"date":"2020-11-07","confirmed_cases":1436,"deaths":25,"tests_performed":32350},{"date":"2020-11-08","confirmed_cases":1650,"deaths":9,"tests_performed":33340},{"date":"2020-11-09","confirmed_cases":1637,"deaths":23,"tests_performed":31904},{"date":"2020-11-10","confirmed_cases":1708,"deaths":21,"tests_performed":31989},{"date":"2020-11-11","confirmed_cases":1808,"deaths":34,"tests_performed":36686},{"date":"2020-11-12","confirmed_cases":2304,"deaths":37,"tests_performed":36923},{"date":"2020-11-13","confirmed_cases":2165,"deaths":17,"tests_performed":34535},{"date":"2020-11-14","confirmed_cases":2443,"deaths":32,"tests_performed":39410},{"date":"2020-11-15","confirmed_cases":2128,"deaths":19,"tests_performed":29511},{"date":"2020-11-16","confirmed_cases":2140,"deaths":33,"tests_performed":29378},{"date":"2020-11-17","confirmed_cases":2208,"deaths":37,"tests_performed":38544},{"date":"2020-11-18","confirmed_cases":2547,"deaths":18,"tests_performed":36899},{"date":"2020-11-19","confirmed_cases":2738,"deaths":36,"tests_performed":42909},{"date":"2020-11-20","confirmed_cases":2843,"deaths":42,"tests_performed":42752},{"date":"2020-11-21","confirmed_cases":2665,"deaths":59,"tests_performed":38983},{"date":"2020-11-22","confirmed_cases":2756,"deaths":34,"tests_performed":36929},{"date":"2020-11-23","confirmed_cases":2954,"deaths":48,"tests_performed":39165},{"date":"2020-11-24","confirmed_cases":3009,"deaths":59,"tests_performed":41583},{"date":"2020-11-25","confirmed_cases":3306,"deaths":40,"tests_performed":45999},{"date":"2020-11-26","confirmed_cases":3113,"deaths":54,"tests_performed":43214},{"date":"2020-11-27","confirmed_cases":3045,"deaths":45,"tests_performed":48223},{"date":"2020-11-28","confirmed_cases":2829,"deaths":43,"tests_performed":40369},{"date":"2020-11-29","confirmed_cases":2829,"deaths":40,"tests_performed":33302}];
+
+        // Create axes
+        var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+        var valueAxis1 = chart.yAxes.push(new am4charts.ValueAxis());
+        valueAxis1.title.text = "Cases Number";
+        valueAxis1.cursorTooltipEnabled = false;
+        var valueAxis2 = chart.yAxes.push(new am4charts.ValueAxis());
+        valueAxis2.title.text = "Tests Performed";
+        valueAxis2.renderer.opposite = true;
+        valueAxis2.renderer.grid.template.disabled = true;
+        valueAxis2.cursorTooltipEnabled = false;
+
+        // Create series
+        var series1 = chart.series.push(new am4charts.ColumnSeries());
+        series1.dataFields.valueY = "deaths";
+        series1.dataFields.dateX = "date";
+        series1.yAxis = valueAxis1;
+        series1.name = "Deaths";
+        series1.tooltipText = "{name}\n[bold font-size: 15]{valueY}";
+        series1.fill = chart.colors.getIndex(0);
+        series1.fill = am4core.color("red");
+        series1.strokeWidth = 0;
+        series1.clustered = false;
+        series1.columns.template.width = am4core.percent(40);
+
+        var series2 = chart.series.push(new am4charts.ColumnSeries());
+        series2.dataFields.valueY = "confirmed_cases";
+        series2.dataFields.dateX = "date";
+        series2.yAxis = valueAxis1;
+        series2.name = "Confirmed Cases";
+        series2.tooltipText = "{name}\n[bold font-size: 15]{valueY}";
+        series2.fill = am4core.color("#f8cbad");
+        series2.strokeWidth = 0;
+        series2.clustered = false;
+        series2.toBack();
+
+        var series4 = chart.series.push(new am4charts.LineSeries());
+        series4.dataFields.valueY = "tests_performed";
+        series4.dataFields.dateX = "date";
+        series4.name = "Tests Performed";
+        series4.strokeWidth = 2;
+        series4.tensionX = 0.7;
+        series4.yAxis = valueAxis2;
+        series4.tooltipText = "{name}\n[bold font-size: 15]{valueY}[/]";
+        series4.stroke = am4core.color("#4472c4");
+        series4.strokeDasharray = "3,3";
+
+        var bullet4 = series4.bullets.push(new am4charts.CircleBullet());
+        bullet4.circle.radius = 3;
+        bullet4.circle.strokeWidth = 2;
+        bullet4.circle.fill = am4core.color("#fff");
+
+        // Add cursor
+        chart.cursor = new am4charts.XYCursor();
+
+        // Add legend
+        chart.legend = new am4charts.Legend();
+        chart.legend.position = "top";
+
+        // Add scrollbar
+        chart.scrollbarX = new am4charts.XYChartScrollbar();
+        chart.scrollbarX.series.push(series1);
+        chart.scrollbarX.series.push(series4);
+        chart.scrollbarX.parent = chart.bottomAxesContainer;
+
+    }); // end am4core.ready()
+</script>
+    <script>
+        // A $( document ).ready() block.
+        $( document ).ready(function() {
+            $('#covidEmergency').modal('show')
+        });
+    </script>
+
+<script type="text/javascript" src="../www.gstatic.com/charts/loader.js"></script>
+<script language="JavaScript">
+
+    google.charts.load('current', {packages: ['corechart']});
+
+    function drawChart() {
+
+        var data = google.visualization.arrayToDataTable(
+            [["Date","Positivity%","3 Days Rolling Average"],["2020-08-02",3.95,4.01],["2020-08-03",2.99,3.54],["2020-08-04",4.04,3.66],["2020-08-05",5.67,4.23],["2020-08-06",4.85,4.85],["2020-08-07",3.82,4.78],["2020-08-08",3.46,4.04],["2020-08-09",2.71,3.33],["2020-08-10",2.63,2.93],["2020-08-11",2.91,2.75],["2020-08-12",3.54,3.03],["2020-08-13",3.92,3.46],["2020-08-14",2.64,3.36],["2020-08-15",3.15,3.23],["2020-08-16",2.79,2.86],["2020-08-17",2.17,2.7],["2020-08-18",3.5,2.82],["2020-08-19",2.68,2.79],["2020-08-20",2.17,2.78],["2020-08-21",2.46,2.44],["2020-08-22",2.29,2.31],["2020-08-23",2.37,2.37],["2020-08-24",2.1,2.25],["2020-08-25",1.86,2.11],["2020-08-26",1.9,2.11],["2020-08-27",1.77,1.95],["2020-08-28",1.42,1.84],["2020-08-29",1.23,1.7],["2020-08-30",1.18,1.47],["2020-08-31",1.44,1.28],["2020-09-01",2.15,1.28],["2020-09-02",1.95,1.59],["2020-09-03",2.14,1.85],["2020-09-04",2.06,2.08],["2020-09-05",1.91,2.05],["2020-09-06",1.88,2.04],["2020-09-07",1.4,1.95],["2020-09-08",1.87,1.73],["2020-09-09",1.76,1.72],["2020-09-10",1.86,1.68],["2020-09-11",1.91,1.83],["2020-09-12",1.67,1.84],["2020-09-13",1.87,1.81],["2020-09-14",1.48,1.82],["2020-09-15",2.29,1.68],["2020-09-16",1.71,1.88],["2020-09-17",2.22,1.83],["2020-09-18",1.81,2.07],["2020-09-19",1.85,1.91],["2020-09-20",1.9,1.96],["2020-09-21",1.61,1.85],["2020-09-22",1.58,1.79],["2020-09-23",1.89,1.69],["2020-09-24",2.13,1.69],["2020-09-25",1.41,1.86],["2020-09-26",1.9,1.81],["2020-09-27",1.96,1.81],["2020-09-28",2.06,1.76],["2020-09-29",2.33,1.97],["2020-09-30",1.59,2.12],["2020-10-01",1.97,1.99],["2020-10-02",1.58,1.96],["2020-10-03",1.87,1.71],["2020-10-04",2.18,1.81],["2020-10-05",1.65,1.88],["2020-10-06",2.26,1.9],["2020-10-07",1.87,2.03],["2020-10-08",1.95,1.93],["2020-10-09",1.99,2.03],["2020-10-10",2.31,1.94],["2020-10-11",1.43,2.08],["2020-10-12",1.77,1.91],["2020-10-13",2.13,1.83],["2020-10-14",2.37,1.77],["2020-10-15",1.94,2.09],["2020-10-16",1.97,2.15],["2020-10-17",1.77,2.1],["2020-10-18",1.62,1.9],["2020-10-19",2.36,1.79],["2020-10-20",2.47,1.92],["2020-10-21",2.58,2.15],["2020-10-22",2.72,2.47],["2020-10-23",2.73,2.59],["2020-10-24",2.9,2.68],["2020-10-25",2.67,2.78],["2020-10-26",2.85,2.77],["2020-10-27",2.8,2.8],["2020-10-28",3.08,2.77],["2020-10-29",3.27,2.91],["2020-10-30",3.72,3.05],["2020-10-31",3.53,3.36],["2020-11-01",4.02,3.51],["2020-11-02",4.17,3.76],["2020-11-03",4.94,3.91],["2020-11-04",4.02,4.38],["2020-11-05",3.85,4.38],["2020-11-06",4.37,4.27],["2020-11-07",4.44,4.08],["2020-11-08",4.95,4.22],["2020-11-09",5.13,4.58],["2020-11-10",5.34,4.84],["2020-11-11",4.93,5.14],["2020-11-12",6.24,5.13],["2020-11-13",6.27,5.5],["2020-11-14",6.2,5.81],["2020-11-15",7.21,6.24],["2020-11-16",7.28,6.56],["2020-11-17",5.73,6.9],["2020-11-18",6.9,6.74],["2020-11-19",6.38,6.64],["2020-11-20",6.65,6.34],["2020-11-21",6.84,6.64],["2020-11-22",7.46,6.62],["2020-11-23",7.54,6.98],["2020-11-24",7.24,7.28],["2020-11-25",7.19,7.41],["2020-11-26",7.2,7.32],["2020-11-27",6.31,7.21],["2020-11-28",7.01,6.9],["2020-11-29",8.53,6.84]]        );
+
+        // Set chart options
+        var options = {
+            vAxis: {title: 'Positivity %age'},
+            seriesType: 'bars',
+            series: {1: {type: 'line'}}
+        };
+
+        // Instantiate and draw the chart.
+        var chart = new google.visualization.ComboChart(document.getElementById('container'));
+        chart.draw(data, options);
+    }
+
+    google.charts.setOnLoadCallback(drawChart);
+</script>
+</body>
+</html>

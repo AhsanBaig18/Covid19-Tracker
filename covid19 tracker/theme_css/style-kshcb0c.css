@@ -1,0 +1,30 @@
+@media only screen and (max-width: 767px) {
+
+    #statistics .dream-btn-group a.btn.more-btn {
+        margin-bottom: 20px;
+        width: 80%;
+
+    }
+}
+
+#statistics .dream-btn-group a.btn.more-btn {
+    display: inline-block;
+}
+
+#statistics .dream-btn-group {
+    text-align: center;
+}
+
+.dream-btn-group .more-btn {
+    background-image: linear-gradient(to right, #28a745 0%, #0bab30 50%, #13882e 100%);
+    border: 1px solid #28a745;
+}
+
+.co-right-bottom {
+    font-size: 13px;
+    color: #28a745;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+

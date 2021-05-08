@@ -1,0 +1,482 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="covid, corona, corona pakistan, covid19, pakistan corona, corona diesease, wuhan virus, corona virus, pakistan corona deaths, pakistan corona infections, pakistan corona case, covid19 tracker website pakistan" />
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="jPjxEuTpIlElLIxNI1mjCnsGyIklDG4usHD0kngm">
+
+            <title>  COVID-19 Tracker Preventions & Informations </title>
+        <link rel="icon" href="theme_img/core-img/fevo.ico" type="image/ico" sizes="16x16">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="theme_css/style76f7.css?v5.12">
+    <!-- Styles -->
+    <link rel="stylesheet" href="theme_css/style-ad0bbf.css?v2.5">
+    <!-- Styles -->
+    <link rel="stylesheet" href="theme_css/style-kshcb0c.css?v1.2">
+
+    <link href="../cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+</head>
+<body class="light-version">
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="dream-load"></div>
+        </div>
+    </div>
+    <div class="image-overlay" style="display:none; width: 100%; height: 100vh; position: fixed; background-color: rgba(0, 0, 0, 0.5); z-index: 999999999">
+        <div style="font-size: 22px; color: #fff; position: absolute; top: 7px; right: 30px; cursor: pointer" onclick="cancelHomeImg()">X</div>
+    </div>
+    <div class="image-cont text-center" style="display:none; width: 90%; height: 90vh; position: fixed; top: 15px; background-color: #fff; z-index: 9999999999; left: 50%; margin-left: -45%">
+        
+    </div>
+    <div id="app">
+        <header class="header-area fadeInDown sticky" data-wow-delay="0.2s">
+ <div class="co-top-bar">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <p><strong>COVID-19 TRACKER</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="classy-nav-container light breakpoint-off">
+  <div class="container">
+    <!-- Classy Menu -->
+    <nav class="classy-navbar light justify-content-between" id="dreamNav">
+
+      <!-- Logo -->
+      <a class="nav-brand light" href="index.html"><img src="theme_img/core-img/logo.png" alt="logo"></a>
+
+      <!-- Navbar Toggler -->
+      <div class="classy-navbar-toggler demo">
+        <span class="navbarToggler"><span></span><span></span><span></span></span>
+      </div>
+
+      <!-- Menu -->
+      <div class="classy-menu">
+
+        <!-- close btn -->
+        <div class="classycloseIcon">
+          <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+        </div>
+
+        <!-- Nav Start -->
+        <div class="classynav">
+          <ul id="nav">
+           <li>
+           <a href="stats/pakistan.html" style="color: red !important; font-size: 16px !important; font-weight: bold;">COVID-19 STATS</a>
+            <ul class="dropdown">
+              <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/weekly.html">Weekly Summary Stats</a></li>
+              <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/pakistan.html">Pakistan</a></li>
+              <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/ict.html">Islamabad</a></li>
+              <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/punjab.html">Punjab</a></li>
+              <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/sindh.html">Sindh</a></li>
+              <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/kpk.html">KPK</a></li>
+              <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/balochistan.html">Balochistan</a></li>
+              <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/gilgit-baltistan.html">Gilgit Baltistan</a></li>
+              <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/ajk.html">AJK/GB</a></li>
+              <li class="nk-menu-item"><a class="nav-link nk-menu-link" href="stats/global.html">World Cases & Stats</a></li>
+            </ul>
+          </li>
+        </li>
+        <li><a href="covid19.html">covid-19</a></li>
+        <li><a href="prevention.html">PREVENTION</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li>
+           
+            
+              
+             
+              
+            </ul>
+        </li>
+        <li>
+             </ul>
+          </li>
+        
+        
+        
+
+      </ul>
+
+      <!-- Button -->
+      <!--   <a href="#" class="btn login-btn ml-50">Log in</a> -->
+
+    </div>
+    <!-- Nav End -->
+  </div>
+</nav>
+</div>
+</div>
+
+</header>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160831327-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160831327-1');
+</script>
+        
+<!-- ##### Welcome Area Start ##### -->
+<div class="breadcumb-area clearfix dzsparallaxer auto-init" data-options='{direction: "normal"}'>
+  <div class="divimage dzsparallaxer--target" style="width: 101%; height: 130%; background-image: url(theme_img/core-img/about-img.jpg)"></div>
+  <!-- breadcumb content -->
+  <div class="breadcumb-content">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <nav aria-label="breadcrumb" class="breadcumb--con text-center">
+            <ol class="breadcrumb justify-content-center wow fadeInUp" data-wow-delay="0.4s">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Virus Preventtion</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ##### Welcome Area End ##### -->
+
+<div class="apis-sec relative hidden" id="system">
+  <section class="compare non section-padding-100-70">
+    <div class="container">
+      <div class="section-heading text-center">
+        <!-- Dream Dots -->
+        <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+          <span class="gradient-text blue">Important Precautions</span>
+        </div>
+        <h2 class=" fadeInUp" data-wow-delay="0.3s">HOW TO STAY SAFE</h2>
+        <p class=" fadeInUp" data-wow-delay="0.4s">Follow these simple precautions to reduce your chances of contracting the new coronavirus, which causes the disease known as COVID-19.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="compare-box">
+
+            <div class="compare-heading mb-30">
+              <span class="title text-center">Things Not To Do</span>
+            </div>
+            <ul class="unfeat-list list-unstyled">
+              <li>
+                <div class="icon">
+
+                  <img src="theme_img/icons/n1.png" alt="" class="img-responsive">
+                </div>
+                <div class="desc">
+                  <span class="title">Do Not Share Eating</span>
+                  <p>Stop having food around those who ask you for it.</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon">
+                  <img src="theme_img/icons/n2.png" alt="" class="img-responsive">
+                </div>
+                <div class="desc">
+                  <span class="title">Don’t Touch Your Face or Nose</span>
+                  <p>Avoid animals (alive or dead), animal markets, and products that come from animals (such as uncooked meat).</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="icon">
+                  <img src="theme_img/icons/n3.png" alt="" class="img-responsive">
+                </div>
+                <div class="desc">
+                  <span class="title">Avoid Contact with Sick People</span>
+                  <p>Avoid close contact with anyone showing symptoms of respiratory illness.</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon">
+                  <img src="theme_img/icons/n4.png" alt="" class="img-responsive">
+                </div>
+                <div class="desc">
+                  <span class="title">Avoid Crowded Places (Social Distancing)</span>
+                  <p>As an individual, you can lower your risk of infection by reducing your rate of contact with other people.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="compare-box compare-box-right">
+            <div class="compare-heading text-center mb-30">
+              <span class="title">Things You Should Do</span>
+            </div>
+            <ul class="unfeat-list list-unstyled">
+              <li>
+                <div class="icon">
+                  <img src="theme_img/icons/t1.png" alt="" class="img-responsive">
+                </div>
+                <div class="desc">
+                  <span class="title">Wash Your Hands For 20sec</span>
+                  <p>Wash hands often with soap and water for at least 20 seconds.</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon">
+                  <img src="theme_img/icons/t2.png" alt="" class="img-responsive">
+                </div>
+                <div class="desc">
+                  <span class="title">Wear a Mask if Available</span>
+                  <p>You should continue to use the
+                  surgical mask in all public places until you are advised.</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon">
+                  <img src="theme_img/icons/t3.png" alt="" class="img-responsive">
+                </div>
+                <div class="desc">
+                  <span class="title">Cover Nose When Sneezing</span>
+                  <p>Cover your mouth and nose with a tissue or your sleeve (not your hands) when coughing or sneezing.</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon">
+                  <img src="theme_img/icons/t4.png" alt="" class="img-responsive">
+                </div>
+                <div class="desc">
+                  <span class="title">Seek Medical Care Regularly</span>
+                  <p>Regular health checks can identify any early signs of health issues.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+</div>
+
+
+<section class="about-us-area section-padding-0-70 clearfix">
+
+
+  <div class="bub-right" id="feat">
+    <div class="container">
+
+      <div class="section-heading text-center">
+        <!-- Dream Dots -->
+        <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+          <span class="gradient-text blue">Important Prevention</span>
+        </div>
+        <h2 class="fadeInUp" data-wow-delay="0.3s">FIGHT CORONA VIRUS</h2>
+        <p class="fadeInUp" data-wow-delay="0.4s">Travelers are urged to do the following in case he/she experiences any signs of respiratory infection before, during and after his/her trip.</p>
+      </div>
+
+
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <!-- Content -->
+          <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.2s">
+            <!-- Icon -->
+            <div class="service_icon">
+              <img src="theme_img/icons/s1.png" alt="">
+            </div>
+            <h6>Avoid Crowded Places (Social Distancing)</h6>
+            <p>As an individual, you can lower your risk of infection by reducing your rate of contact with other people.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <!-- Content -->
+          <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.3s">
+            <!-- Icon -->
+            <div class="service_icon">
+              <img src="theme_img/icons/s2.png" alt="">
+            </div>
+            <h6>Wear a Face Mask</h6>
+            <p>You should continue to use the
+            surgical mask in all public places until you are advised.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <!-- Content -->
+          <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.4s">
+            <!-- Icon -->
+            <div class="service_icon">
+              <img src="theme_img/icons/s3.png" alt="">
+            </div>
+            <h6>Cover Mouth when Coughing</h6>
+            <p>Cover your mouth and nose with a tissue or your sleeve (not your hands) when coughing or sneezing.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <!-- Content -->
+          <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.2s">
+            <!-- Icon -->
+            <div class="service_icon">
+              <img src="theme_img/icons/s4.png" alt="">
+            </div>
+            <h6> Wash Hand Frequently</h6>
+            <p>Wash hands often with soap and water for at least 20 seconds. Use an alcohol-based hand sanitizer if soap and water are not available.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <!-- Content -->
+          <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.3s">
+            <!-- Icon -->
+            <div class="service_icon">
+              <img src="theme_img/icons/s5.png" alt="">
+            </div>
+            <h6>Seek Medical Care</h6>
+            <p>Seek medical care right away. Before you go to a doctor’s office or emergency room, call ahead and tell them about your recent travel and your symptoms.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <!-- Content -->
+          <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.4s">
+            <!-- Icon -->
+            <div class="service_icon">
+              <img src="theme_img/icons/s6.png" alt="">
+            </div>
+            <h6>Avoid Contact with Animals</h6>
+            <p>Avoid animals (alive or dead), animal markets, and products that come from animals (such as uncooked meat).</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-12">
+       
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+        <footer>
+    <div class="footer-content-area mt-0">
+      <div class="container">
+        <div class="row ">
+          <div class="col-12 col-lg-4 col-md-6">
+            <div class="footer-copywrite-info">
+              <!-- Copywrite -->
+              <div class="copywrite_text fadeInUp" data-wow-delay="0.2s">
+                <div class="footer-logo">
+                  <a href="index.html"><img src="theme_img/core-img/logo.png" alt="logo"></a>
+                </div>
+                <p>See Live Stats Of Worldwide & Pakistan for health information and advice about coronavirus (COVID-19), how to prevent and protect yourself from disease.</p>
+              </div>
+
+              <!-- Social Icon -->
+              <div class="footer-social-info fadeInUp" data-wow-delay="0.4s">
+                
+                
+              </div>
+              <br>
+               <div class="" data-wow-delay="0.6s">
+          
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-3 col-md-6">
+            <div class="contact_info_area d-sm-flex justify-content-between">
+              <!-- Content Info
+              <div class="contact_info mt-x text-center fadeInUp" data-wow-delay="0.3s">
+                <h5>PRIVACY & TOS</h5>
+                <a href="https://covid.gov.pk"><p>Home</p></a>
+                <a href="https://covid.gov.pk/covid19"><p>covid19</p></a>
+                <a href="https://covid.gov.pk/prevention"><p>Prevention</p></a>
+                <a href="https://covid.gov.pk/faq"><p>FAQ</p></a>
+                <a href="#"><p>Contact</p></a>
+              </div>
+              -->
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-2 col-md-6 ">
+            <!-- Content Info -->
+            <div class="contact_info_area d-sm-flex justify-content-between">
+              <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.2s">
+                <h5>QUICK LINKS</h5>
+                <a href="index.html"><p>Home</p></a>
+                <a href="covid19.html"><p>COVID-19</p></a>
+                <a href="prevention.html"><p>Prevention</p></a>
+                <a href="faq.html"><p>FAQ</p></a>
+                <a href="contact.html"><p>Contact</p></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-lg-3 col-md-6 ">
+            <div class="contact_info_area d-sm-flex justify-content-between">
+              <!-- Content Info -->
+              <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.4s">
+                <h5>STAY CONNECT WITH US</h5>
+                <p>Ministry of National Health Services Regulations & Coordination,</p><p> 3rd Floor Kohsar Block,</p>  <p>Islamabad</p>
+                <p>+92 (51) 9255090-2,</p>  
+                <p>+92 (51) 9245717</p>
+                <p><a href="healthpromotion@who.int">healthpromotion@who.int</a></p>
+                <p><a href="mailto:contact@nhsrc.gov.pk">contact@nhsrc.gov.pk</a></p>
+                <p><a href="england.contactus@nhs.net">england.contactus@nhs.net</a></p>
+
+
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <div class="col-12 col-lg-12 col-md-12 co-right-bottom">Designed & Developed by Ahsan Sattar 28026 CS <a href=" target="_blank" >Coordination With Group Members </a><img src="theme_img/core-img/prev-img.jpg"><a href= target="_blank"> </a></div>
+        </div>
+  </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="theme_js/jquery.min.js"></script>
+    <script src="theme_js/popper.min.js"></script>
+    <script src="theme_js/bootstrap.min.js"></script>
+    <script src="theme_js/plugins.js"></script>
+    <script src="theme_js/animated.js"></script>
+    <script src="theme_js/jquery.syotimer.min.js"></script>
+    <script src="theme_js/script6d13.js?1.1v"></script>
+    <script src="../cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="../cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWF3Lm7Wyi_fF4JzOgyIlaXr-VsiV61BY&amp;libraries=places"></script>
+    <script src="../d.bablic.com/snippet/5eb12116c8ff60000178465519c4.js?version=3.9"></script>
+    
+      
+
+    <script>
+         function hideBablic(){
+             if($("iframe#bablicFlagsWidget").contents().find("a.logo").length === 1){
+                 $("iframe#bablicFlagsWidget").contents().find("a.logo").remove();
+             }
+         }
+
+         setInterval(function(){ hideBablic() }, 500);
+
+         function homeImage(img){
+            $('.image-overlay').show();
+            $('.image-cont').show();
+            $('.image-cont').html(`<img src="${img}" alt="" style="height: 100%">`);
+         }
+
+         function cancelHomeImg(){
+            $('.image-overlay').hide();
+            $('.image-cont').hide();
+            $('.image-cont').html('');
+         }
+    </script>
+</body>
+</html>

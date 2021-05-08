@@ -1,0 +1,381 @@
+/*home new style stats*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&amp;display=swap');
+.hd-box-main h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    color: #000000;
+    position: relative;
+    margin-bottom: 5px;
+    padding: 0;
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-align: center;
+}
+.hd-box-main h4 {
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 0.9;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0 0 15px 0;
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-align: center;
+}
+.hd-box-main h5 {
+    font-weight: 700;
+    font-size: 110px;
+    line-height: 0.9;
+    color: #67336e !important;
+    margin-bottom: 0;
+    letter-spacing: 8px;
+    font-family: 'Baloo Bhaina 2', cursive;
+
+}
+.covid-number-box h3 {
+    font-weight: 700;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 3px;
+    line-height: 0.8;
+}
+.covid-number-box h4 {
+    font-weight: bold;
+    font-size: 21px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.covid-number-box.critical h4 {
+        color: #ff6830;
+        text-decoration: none;
+}
+.covid-number-box.critical h3 {
+        color: #ff6830;
+}
+.covid-statistics {
+    padding-bottom: 40px;
+    /*   background: url(/img/covid-bg.jpg) no-repeat center center;*/
+    min-height: 310px;
+    padding-top: 60px;
+}
+.covid-number-box {
+    padding-top: 10px;
+    text-align: center;
+}
+.covid-number-box.revovered h3, .covid-number-box.revovered h4 {
+    color: #28a745;
+}
+.covid-statistics .col-md-2.text-center {
+    margin-top: -5px;
+}
+.covid-number-box.deaths * {
+    color: #cc0404;
+}
+.covid-statistics .more-btn {
+    position: relative;
+    z-index: 1;
+    min-width: 170px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 8px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: #fff;
+    transition: all 500ms;
+    margin-bottom: 10px !important;
+}
+.col-md-2.text-center.deaths * {
+    color: #cc0404;
+}
+.covid-number-box:hover a h3, .covid-number-box:hover a h4 {
+    color: #344f6f;
+    transition: .3s;
+}
+
+.covid-number-box a h3, .covid-number-box a h4 {
+    transition: .3s;
+}
+.covid-number-box.last-box h3 a.stats-gb, .covid-number-box.last-box h4 a.stats-gb{
+    color: #000;
+    transition: .3s;
+}
+.covid-number-box.last-box h3 a.ajk-stats, .covid-number-box.last-box h4 a.ajk-stats{
+    color: #000;
+    transition: .3s;
+}
+
+.covid-number-box.last-box h3:hover a.stats-gb, .covid-number-box.last-box h4:hover a.stats-gb{
+    color: #000;
+    transition: .3s;
+}
+.covid-number-box.last-box h3:hover a.ajk-stats, .covid-number-box.last-box h4:hover a.ajk-stats{
+    color: #000;
+    transition: .3s;
+}
+section#features {
+    padding-top: 30px;
+}
+.col-md-3.text-center h6 {
+    font-size: 14px;
+}
+.covid-number-box h4 {
+    text-decoration: underline;
+}
+.covid-number-box.deaths h4 {
+    text-decoration: none;
+}
+.covid-number-box.revovered h4 {
+    text-decoration: none;
+}
+.covid-number-box.last-box h4 {
+    text-decoration: none;
+}
+.covid-number-box.last-box h4 a {
+    text-decoration: underline;
+}
+.hd-box-main {
+    position: relative;
+}
+span.score-img {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+span.score-img img {
+    position: initial;
+}
+.covid-number-box {
+    position: relative;
+}
+span.hrrs-tag {
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    top: 0;
+    padding: 3px;
+    font-size: 8px;
+    font-weight: 600;
+    color: #000;
+    background-color: yellow;
+}
+a.ajk-stats span.hrrs-tag {
+    left: -90px !important;
+    right: auto !important;
+}
+
+a.ajk-stats ~ span.hrrs-tag {
+    left: 0;
+    right: auto;
+}
+
+a.stats-gb ~ span.hrrs-tag {
+    right: 0;
+    left: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:active {
+    color: #fff !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:focus,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:active{
+    color: #fff !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+
+.laboratories-area dl {
+    width: 100%;
+}
+
+.laboratories-area dt {
+    cursor: pointer;
+    padding: 15px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 500;
+}
+
+.laboratories-area dt:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.laboratories-area dd {
+    margin: 0;
+    padding: 15px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.laboratories-area.hos dd {
+    margin: -15px 30px 15px;
+    padding: 15px 25px 0px;
+    background: #fff;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.light-version .laboratories-area dt {
+    color: #fff;
+    border: 1px solid #f2f4f8;
+    background-image: linear-gradient(to right, #28a745 0%, #0bab30 50%, #13882e 100%);
+    background-image: linear-gradient(to right, #28a745 0%, #0bab30 50%, #13882e 100%);
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.light-version .laboratories-area dt.v2 {
+    background-image: linear-gradient(to right, #28a745 0%, #0bab30 50%, #13882e 100%);
+}
+
+.light-version .laboratories-area dt:first-child {
+    border-top: 1px solid #f2f4f8;
+}
+li.int-trav {
+    position: relative !important;
+}
+.classynav ul li.int-trav ul li {
+    display: inline-block;
+    position: initial;
+    width: 100%;
+}
+.classy-nav-container a:focus, .classy-nav-container a:hover {
+    font-size: 12px;
+}
+.classynav ul li a {
+    font-size: 12px;
+}
+li.int-trav ul li {
+    display: inline-block;
+    position: initial;
+}
+.classy-nav-container li.int-trav ul li a:focus, .classy-nav-container li.int-trav ul li a:hover {
+    font-size: 11px;
+}
+.classy-nav-container li.int-trav ul li a, .classy-nav-container li.int-trav ul li a {
+    font-size: 11px;
+}
+.classy-menu {
+    margin-right: 40px;
+}
+
+.light-version p {
+    color: #1d1d1d;
+}
+.co-top-bar p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #fff !important;
+    letter-spacing: 1px;
+}
+/*desktop only start*/
+@media (min-width: 769px){
+    li.int-trav .dropdown {
+        width: 280px !important;
+    }
+    li.int-trav .dropdown li a {
+        width: 280px !important;
+        max-width: 280px !important;
+    }
+}
+/*desktop only end*/
+
+
+/*MObile only*/
+@media only screen and (max-width: 490px) {
+    .hd-box-main h5 {
+        font-size: 70px;
+        text-align: center;
+    }
+}
+/*Mobile only End*/
+
+
+/* IPAD screen */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+    .hd-box-main h5 {
+        font-size: 110px;
+    }
+
+    div#statistics h2 {
+        font-size: 40px;
+    }
+    span.score-img img {
+        width: 149px;
+        position: absolute;
+        left: -74px;
+        top: -10px;
+        opacity: .9;
+    }
+    div#statistics .numbers-main {
+        float: right;
+        font-size: 55px;
+        margin-top: -85px;
+    }
+    .numbers-child h6 {
+        font-size: 14px;
+    }
+    .what-we-do {
+        padding-bottom: 50px;
+    }
+    .section-padding-100 {
+        padding-top: 40px;
+    }
+    .what-we-do .outer {
+        position: relative;
+        padding-top: 00px;
+    }
+    .what-we-do {
+        padding-bottom: 40px;
+    }
+    .hero-section {
+        padding-bottom: 5px;
+    }
+    .section-padding-70-0 {
+        padding-top: 30px;
+    }
+    .section-heading {
+        margin-bottom: 10px;
+    }
+    .section-padding-0-70 {
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+    .section-padding-100-0 {
+        padding-top: 20px;
+    }
+    .single-blog-area {
+        margin-bottom: 30px;
+    }
+    ol.breadcrumb.justify-content-center.wow.fadeInUp {
+        height: 165px;
+        line-height: 85px;
+    }
+}
+/*IPAD end*/
